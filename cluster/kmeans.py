@@ -21,6 +21,10 @@ class KMeans():
                 position is too small (below your "tolerance").
         """ 
         # In the following 4 lines, please initialize your arguments
+        self.k = 
+        self.metric = 
+        self.max_iter = 
+        self.tol = 
 
         
         # In the following 2 lines, you will need to initialize 1) centroid, 2) error (set as numpy infinity)
