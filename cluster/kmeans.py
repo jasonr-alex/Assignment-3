@@ -5,7 +5,7 @@ from sklearn import datasets
 
 
 class KMeans():
-    def __init__(self, k = 10, metric = "euclidean", max_iter = 300, tol = 1.0e-4):
+    def __init__(self, k = 4, metric = "euclidean", max_iter = 300, tol = 1.0e-4):
         """
         Args:
             k (int): 
