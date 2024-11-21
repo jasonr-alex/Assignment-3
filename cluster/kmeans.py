@@ -47,18 +47,23 @@ class KMeans():
         
         # In the line below, you need to randomly select where the centroid's positions will be.
         # Also set your initialized centroid to be your random centroid position. 
-        centroid_rand = np.rando.rand(3)
+        centroid_rand = np.random.choice(matrix.shape[0], size = self.k, replace = False)
+        self.centroid = matrix[centroid_rand]
+
 
         
         # In the line below, calculate the first distance between your randomly selected centroid positions
         # and the data points
 
 
+
+
+
         
         # In the lines below, Create a for loop to keep assigning data points to clusters, updating centroids, 
         # calculating distance and error until the iteration limit you set is reached
 
-            # Within the loop, find the each data point's closest centroid
+            # Within the loop, find each data point's closest centroid
 
         
         
