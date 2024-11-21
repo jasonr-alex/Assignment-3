@@ -56,7 +56,6 @@ def evaluate_kmeans(data, k_range=range(2, 11)):
 def main():
     # Load example dataset
     iris = pd.read_csv("data/iris_extended.csv")
-    print(iris)
     
     # Select numeric features
     numeric_features = iris.select_dtypes(include=[np.number]).columns.tolist()
