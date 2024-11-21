@@ -2,7 +2,7 @@ import numpy as np
 from scipy.spatial.distance import cdist
 
 class KMeans():
-    def __init__(self, k: int, metric:str, max_iter: int, tol: float):
+    def __init__(self, k: 4, metric: "euclidean", max_iter: 300, tol: 1.0e-4):
         """
         Args:
             k (int): 
@@ -21,14 +21,16 @@ class KMeans():
                 position is too small (below your "tolerance").
         """ 
         # In the following 4 lines, please initialize your arguments
-        self.k = 
-        self.metric = 
-        self.max_iter = 
-        self.tol = 
+        self.k = k 
+        self.metric = metric 
+        self.max_iter = max_iter 
+        self.tol = tol 
 
         
         # In the following 2 lines, you will need to initialize 1) centroid, 2) error (set as numpy infinity)
-
+        self.centroid = None 
+        self.error = np.infinity 
+        
     
     def fit(self, matrix: np.ndarray):
         """
@@ -44,11 +46,13 @@ class KMeans():
         """
         
         # In the line below, you need to randomly select where the centroid's positions will be.
-        # Also set your initialized centroid to be your random centroid position
+        # Also set your initialized centroid to be your random centroid position. 
+        centroid_rand = np.rando.rand(3)
 
         
         # In the line below, calculate the first distance between your randomly selected centroid positions
         # and the data points
+
 
         
         # In the lines below, Create a for loop to keep assigning data points to clusters, updating centroids, 
